@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>CSS Cheat Sheet- A Simplen Guide to HTML</title>
+   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-   <h1>A Simple Guide to HTML</h1>
-   <table>
+    <div class="title">
+    <h1>A Simple Guide to HTML</h1>
+    </div>
+    
+    <div class="links">
+    <table>
        <tr>
            <td>home</td>
            <td>html guide</td>
@@ -21,133 +22,144 @@
            <td>contact me</td>
        </tr>
    </table>
+   </div>
 
+    <div class="intro">
     <h2>CSS Cheat Sheet</h2>
         <p>A quick reference list of basic CSS properties for changing text, layout and colour of HTML elements, as well as how to include them in your web page.</p>
         <p>Not sure what CSS is, perhaps see the cascading style sheets introduction first :-)</p>
-   
-    <h2>Using Styles</h2>
-       <h3>An external CSS file</h3>
-       <p><code>&lt;head></code>
+    </div>
+
+    <div class="main_heading"><h2>Using Styles</h2></div>
+       
+    <div class="header2"><h3>An external CSS file</h3></div>
+        <div class="code">
+            <p><code>&lt;head></code>
             <code>&lt;link rel="stylesheet" type="text/css" href="style.css" title="style">
-                    <code>&lt;/head></p>
-       <h3>Within the html header</h3>
-       <p>
+            <code>&lt;/head></p>
+        </div>
+        
+    <div class="header2"><h3>Within the html header</h3></div>
+        <div class="code">
+            <p>
             <code>&lt;head>
-                    <code>&lt;style type="text/css">
-                     h1 {
-                        color:red;
-                        }
-                        <code>&lt;/style>
-                                <code>&lt;/head>
-       </p>
-       <h3>Inline in the HTML</h3>
-       <p>
-            <code>&lt;p style="color:red;">Some red text
-                    <code>&lt;/p>
-       </p>
+            <code>&lt;style type="text/css">
+            h1 {
+            color:red;
+            }
+            code>&lt;/style>
+            <code>&lt;/head>
+            </code></p>
+        </div>
+        
+    <div class="header2"><h3>Inline in the HTML</h3></div>
+        <div class="code"
+        ><p>
+        <code>&lt;p style="color:red;">Some red text
+                    <code>&lt;/p></p>
+        </div>              
 
-    <h2>Colours & Borders</h2>
+    <div class="main_heading"><h2>Colours & Borders</h2></div>
                     
-<table>
+    <table>
     <tr>
         <th></th>
         <th></th>
     </tr>
 
     <tr>
-        <td>color: red;</td>
-        <td>Element Colour - eg. red | #FF0000</td>
+        <td class="left_table">color: red;</td>
+        <td class="right_table">Element Colour - eg. red | #FF0000</td>
     </tr>
     <tr>
-        <td>background-color: white;</td>	
-        <td>Background Colour of element</td>
+        <td class="left_table">background-color: white;</td>	
+        <td class="right_table">Background Colour of element</td>
     </tr>
     <tr>
-        <td>background-image: url(image.gif);</td>	
-        <td>Background Colour of element</td>
-</tr>
+        <td class="left_table">background-image: url(image.gif);</td>	
+        <td class="right_table">Background Colour of element</td>
+    </tr>
 
     <tr>
-        <td>border-color: yellow;</td>
-        <td>Border Colour of element</td>
+        <td class="left_table">border-color: yellow;</td>
+        <td class="right_table">Border Colour of element</td>
     </tr>
     <tr>
-        <td>border: 1px solid blue;</td>	
-        <td>Width, style and colour of border defined together</td>
+        <td class="left_table">border: 1px solid blue;</td>	
+        <td class="right_table">Width, style and colour of border defined together</td>
     </tr>
-</table>
+    </table>
 
-    <h2>Text Styles</h2>
+    <div class="main_heading"><h2>Text Styles</h2></div>
     <table>
         <tr>
             <th></th>
             <th></th>
         </tr>
         <tr>
-            <td>text-align: left;</td>	
-            <td>Horizontal Alignment - left | center | right</td>
+            <td class="left_table">text-align: left;</td>	
+            <td class="right_table">Horizontal Alignment - left | center | right</td>
         </tr>   
         <tr>
-            <td>text-decoration: underline;</td>
-            <td>Text Decorations - eg. none | underline | line-through</td>
+            <td class="left_table">text-decoration: underline;</td>
+            <td class="right_table">Text Decorations - eg. none | underline | line-through</td>
         </tr>  
         <tr>
-            <td>font-family: fontname;</td>
-            <td>Font Face (Typeface) - eg. Verdana, Arial, Helvetica</td>
+            <td class="left_table">font-family: fontname;</td>
+            <td class="right_table">Font Face (Typeface) - eg. Verdana, Arial, Helvetica</td>
         </tr>        
         <tr>
-            <td>font-size: 16pt;</td>	
-            <td>Font Size or Height - eg. 12pt | 15px</td>
+            <td class="left_table">font-size: 16pt;</td>	
+            <td class="right_table">Font Size or Height - eg. 12pt | 15px</td>
         </tr>       
         <tr>
-            <td>font-weight: bold;</td>
-            <td>Font Weight (Boldness) - eg. bold | normal | 200</td>    
+            <td class="left_table">font-weight: bold;</td>
+            <td class="right_table">Font Weight (Boldness) - eg. bold | normal | 200</td>    
         </tr>
     </table>
     
-    <h2>Size and Layout</h2>
+    <div class="main_heading"><h2>Size and Layout</h2></div>
     <table>
         <tr>
             <th></th>
             <th></th>
         </tr>
         <tr>
-            <td>width: 400px;</td>
-            <td>Width of HTML element - eg. 100px | 50%</td>
+            <td class="left_table">width: 400px;</td>
+            <td class="right_table">Width of HTML element - eg. 100px | 50%</td>
         </tr>
         <tr>    
-            <td>height: 100%;</td>
-            <td>Height of HTML element - eg. 20px | 100%</td>
+            <td class="left_table">height: 100%;</td>
+            <td class="right_table">Height of HTML element - eg. 20px | 100%</td>
         </tr> 
         <tr>
-                <td>margin: 5px;</td>	
-                <td>Margin - space around an element, or distance between two elements</td>
+            <td class="left_table">margin: 5px;</td>	
+            <td class="right_table">Margin - space around an element, or distance between two elements</td>
             </tr>              
         <tr>
-            <td>margin-top: 1px;</td>	
-            <td>Top Margin. Also try -bottom: -left: or -right:</td>
+            <td class="left_table">margin-top: 1px;</td>	
+            <td class="right_table">Top Margin. Also try -bottom: -left: or -right:</td>
         </tr>
         <tr>
-            <td>padding: 5px;</td>	
-            <td>Padding - distance between an elements contents and its border</td>
+            <td class="left_table">padding: 5px;</td>	
+            <td class="right_table">Padding - distance between an elements contents and its border</td>
         </tr>
         <tr>
-            <td>padding-top: 1px;</td>	
-            <td>Top Padding. Also try -bottom: -left: or -right:</td>
+            <td class="left_table">padding-top: 1px;</td>	
+            <td class="right_table">Top Padding. Also try -bottom: -left: or -right:</td>
         </tr>
 
     </table>
       
-    <h2>CSS Lists</h2>
+    <div class="main_heading"><h2>CSS Lists</h2></div>
     <table>
     <tr>
         <th></th>
         <th></th>
     </tr>
     <tr>
-        <td>list-style: none;</td>
-        <td>Clear existing bullet types set by html list tags</td>
+        <td class="left_table">list-style: none;</td>
+        <td class="right_table">Clear existing bullet types set by html list tags</td>
         </tr>
     </table>
 
