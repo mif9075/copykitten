@@ -1,9 +1,11 @@
 .title {
-    color: blue;
+    color: white;
+    background-color: purple;
 }
 
 .links {
-    color: red;
+    color: white;
+    background-color: black;
 }
 
 .intro {
@@ -12,6 +14,10 @@
 
 .main_heading {
     color: yellow;
+}
+
+.header2 {
+    color: aqua
 }
 
 .code {
